@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      background: #15172b;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 26px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d8d6;
+    }
+
+    .hero {
+      height: 90vh;
+      background: linear-gradient(to right, #00d8d6, #0073e6);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      animation: fadeIn 2s ease;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2.section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #00d8d6;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .resume a, .contact a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .resume a:hover, .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #15172b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2rem; }
+      nav a { margin: 10px 0 0 0; display: inline-block; }
+      header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John Doe</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm John</h2>
+    <p>I design and build modern, user-friendly websites using HTML, CSS, and JavaScript. I specialize in responsive design, performance optimization, and clean UI/UX.</p>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a frontend developer with a strong foundation in modern web technologies. I love working on challenging projects, building tools that solve real problems, and learning something new every day.</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <ul>
+      <li><strong>Image Gallery</strong> – A responsive lightbox image viewer built using HTML, CSS, and JavaScript.</li>
+      <li><strong>Calculator</strong> – A simple arithmetic calculator that supports keyboard and button input.</li>
+      <li><strong>Music Player</strong> – A full-featured JavaScript audio player with playlist and volume control.</li>
+    </ul>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2 class="section-title">Resume</h2>
+    <p>You can <a href="#">download my resume</a> for more information on my education, skills, and experience.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: john.doe@example.com</p>
+    <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Doe. Designed with ❤️ and CSS.</p>
+  </footer>
+</body>
+</html>
